@@ -40,7 +40,7 @@ const movies = [
         poster_path: "/bik2BZjmVjeE6LOZqtuTjb4jJPQ.jpg",
         vote_average: 8.6,
         release_date: "2019-05-30",
-        genres: ["drama", "comédia"],
+        genres: ["drama", "comédia", "terror"],
         overview: "Toda a família de Ki-taek está desempregada, vivendo em um porão sujo e apertado. Uma obra do acaso faz com que o filho adolescente comece a dar aulas de inglês à garota de uma família rica. Fascinados com a vida luxuosa destas pessoas, uma a uma, as outras pessoas da família de Ki-taek conseguem trabalho na mesma residência."    },
     {
         id: 5,
@@ -64,7 +64,7 @@ const movies = [
         poster_path: "/8aIvm8OaJISOpVTt7rMIh7X35G5.jpg",
         vote_average: 8.5,
         release_date: "1994-06-24",
-        genres: ["animação", "família"],
+        genres: ["animação", "família", "fantasia"],
         overview: "Este desenho animado da Disney mostra as aventuras de um leão jovem de nome Simba, o herdeiro de seu pai, Mufasa. O tio malvado de Simba, Scar, planeja roubar o trono de Mufasa atraindo pai e filho para uma emboscada. Simba consegue escapar e somente Mufasa morre. Com a ajuda de seus amigos,Timon e Pumba, ele reaparece como adulto para recuperar sua terra, que foi roubada por seu tio Scar."    },
     {
         id: 8,
@@ -72,7 +72,7 @@ const movies = [
         poster_path: "/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
         vote_average: 8.3,
         release_date: "1995-11-22",
-        genres: ["animação", "comédia", "família"],
+        genres: ["animação", "comédia", "família", "fantasia"],
         overview: "O aniversário do garoto Andy está chegando e seus brinquedos ficam nervosos, temendo que ele ganhe novos brinquedos que possam substituí-los. Liderados pelo caubói Woody, o brinquedo predileto de Andy, eles recebem Buzz Lightyear, o boneco de um patrulheiro espacial, que logo passa a receber mais atenção do garoto. Com ciúmes, Woody tenta ensiná-lo uma lição, mas Buzz cai pela janela. É o início da aventura do caubói, que precisa resgatar Buzz para limpar sua barra com os outros brinquedos."    },
     {
         id: 9,
