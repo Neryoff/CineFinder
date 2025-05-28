@@ -1,0 +1,61 @@
+:root {
+    --bg-primary: #f8f9fa;
+    --bg-secondary: #ffffff;
+    --text-primary: #212529;
+    --text-secondary: #495057;
+    --accent-primary: #ff6b00;
+    --accent-secondary: #ff9e00;
+    --accent-tertiary: #ffd166;
+    --accent-glow: rgba(255, 165, 0, 0.3);
+    --shadow: rgba(0, 0, 0, 0.1);
+    --card-bg: #ffffff;
+    --header-bg: #ffffff;
+    --search-bg: rgba(255, 255, 255, 0.9);
+    --search-focus-bg: rgba(255, 255, 255, 0.95);
+    --search-placeholder: #6c757d;
+    --genre-tag-bg: rgba(255, 165, 0, 0.1);
+    --genre-tag-border: rgba(255, 165, 0, 0.3);
+    --genre-tag-hover: rgba(255, 165, 0, 0.4);
+    --genre-tag-active: linear-gradient(45deg, #FFA500, #FF4500);
+    --genre-tag-shadow: rgba(255, 69, 0, 0.3);
+    --favorite-btn-bg: rgba(255, 165, 0, 0.8);
+    --favorite-btn-active: rgba(255, 69, 0, 0.9);
+    --rating-bg: rgba(0, 0, 0, 0.8);
+    --rating-color: #FFD700;
+    --details-gradient: rgba(40, 40, 40, 0.95);
+    --toggle-bg: #e9ecef;
+    --toggle-handle: #ff6b00;
+    --toggle-border: #ced4da;
+    --toggle-icon: #6c757d;
+}
+
+.dark-mode {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --text-primary: #f8f9fa;
+    --text-secondary: #adb5bd;
+    --accent-primary: #ff6b00;
+    --accent-secondary: #ff9e00;
+    --accent-tertiary: #ffd166;
+    --accent-glow: rgba(255, 140, 0, 0.4);
+    --shadow: rgba(0, 0, 0, 0.3);
+    --card-bg: #2d2d2d;
+    --header-bg: #1a1a1a;
+    --search-bg: rgba(30, 30, 30, 0.9);
+    --search-focus-bg: rgba(40, 40, 40, 0.95);
+    --search-placeholder: #a0a0a0;
+    --genre-tag-bg: rgba(255, 165, 0, 0.2);
+    --genre-tag-border: rgba(255, 165, 0, 0.4);
+    --genre-tag-hover: rgba(255, 165, 0, 0.3);
+    --genre-tag-active: linear-gradient(45deg, #FF8C00, #FF5500);
+    --genre-tag-shadow: rgba(255, 69, 0, 0.4);
+    --favorite-btn-bg: rgba(255, 140, 0, 0.8);
+    --favorite-btn-active: rgba(255, 80, 0, 0.9);
+    --rating-bg: rgba(0, 0, 0, 0.9);
+    --rating-color: #FFD700;
+    --details-gradient: rgba(20, 20, 20, 0.95);
+    --toggle-bg: #343a40;
+    --toggle-handle: #ff9e00;
+    --toggle-border: #495057;
+    --toggle-icon: #f8f9fa;
+}

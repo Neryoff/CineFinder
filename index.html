@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineFinder - Encontre seus filmes e séries</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-film"></i>
+                <h1><a href="index.html">CineFinder</a></h1>
+            </div>
+            <div class="controls">
+                <a href="favorites.html" class="favorites-link" title="Favoritos">
+                    <i class="fas fa-heart"></i>
+                </a>
+                <div class="theme-toggle" id="themeToggle">
+                    <div class="toggle-handle"></div>
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Pesquise filmes ou séries...">
+            <button class="search-btn" id="searchBtn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div class="genre-filter">
+            <div class="genre-tag active" data-genre="all">Todos</div>
+            <div class="genre-tag" data-genre="ação">Ação</div>
+            <div class="genre-tag" data-genre="comédia">Comédia</div>
+            <div class="genre-tag" data-genre="drama">Drama</div>
+            <div class="genre-tag" data-genre="fantasia">Fantasia</div>
+            <div class="genre-tag" data-genre="ficção">Ficção Científica</div>
+            <div class="genre-tag" data-genre="terror">Terror</div>
+
+        </div>
+
+        <h2 class="section-title">Filmes Populares</h2>
+        <div class="movies-container" id="moviesContainer">
+        </div>
+    </main>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/favorites.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

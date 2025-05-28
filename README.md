@@ -1,14 +1,14 @@
 # CineFinder
-  É uma aplicação web que permite pesquisar filmes e séries, visualizar
-detalhes e salvar favoritos, utilizando a API pública do TMDB. Desenvolvida para
-desktops, ela oferece uma interface moderna com alternância entre modos escuro e
-claro.
+  É uma aplicação web que permite pesquisar filmes, visualizar
+detalhes, saber onde assistir e salvar os seus filmes favoritos. 
+Desenvolvida para desktops, ela oferece uma interface moderna com 
+alternância entre modo escuro e claro.
 
 Funcionalidades:
 
-• Pesquisa: Busca filmes e séries por meio de uma barra de pesquisa.
+• Pesquisa: Busca filmes por meio de uma barra de pesquisa.
 
-• Favoritos: Salva filmes e séries preferidos no localStorage.
+• Favoritos: Salva filmes preferidos no localStorage.
 
 • Detalhes: Exibe informações detalhadas, como pôster, descrição e avaliação.
 
@@ -24,9 +24,7 @@ Tecnologias:
 
 • CSS3: Estilos com suporte aos temas escuro e claro.
 
-• JavaScript: Lógica de interação e consumo da API.
-
-• Fetch API: Para obter dados de filmes e séries.
+• JavaScript: Lógica de interação.
 
 • localStorage: Armazenamento de favoritos.
 
