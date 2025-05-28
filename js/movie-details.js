@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         disney:     { name: "Disney+",       logo: "disney.png",     url: "https://www.disneyplus.com" },
         paramount:  { name: "Paramount+",    logo: "paramount.png",  url: "https://www.paramountplus.com" },
         globoplay:  { name: "Globoplay",     logo: "globoplay.png",  url: "https://globoplay.globo.com" },
-        cinema:     { name: "Nos Cinemas",   logo: "cinema.png",     url: "#" }
+        cinema:     { name: "Nos Cinemas",   logo: "cinema.png",     url: "https://www.ingresso.com" }
     };
 
     const availabilityData = {
