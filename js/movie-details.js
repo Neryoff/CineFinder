@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const backButton = document.getElementById('backButton');
     const movieDetailContent = document.getElementById('movieDetailContent');
     
-    const movieId = localStorage.getItem('selectedMovieId');
-    
     const movie = JSON.parse(localStorage.getItem('selectedMovie'));
     
     if (!movie) {
@@ -16,62 +14,36 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         return;
     }
-    
-    const availabilityData = {
-        1: [ 
-            { name: "", logo: "hbo.png" },
-            { name: "", logo: "prime.png" },
-            { name: "", logo: "apple.png" }
-        ],
-        2: [
-            { name: "", logo: "netflix.png" },
-            { name: "", logo: "paramount.png" }
-        ],
-        3: [ 
-            { name: "", logo: "disney.png" },
-        ],
-        4: [
-            { name: "", logo: "netflix.png" },
-            { name: "", logo: "prime.png" }
-        ],
-        5: [
-            { name: "", logo: "netflix.png" },
-            { name: "", logo: "hbo.png" },
-            { name: "", logo: "paramount.png" }
-        ],
-        6: [
-            { name: "", logo: "netflix.png" },
-            { name: "", logo: "prime.png" },
-            { name: "", logo: "globoplay.png" }
-        ],
-        7: [
-            { name: "", logo: "disney.png" },
-        ],
-        8: [
-            { name: "", logo: "disney.png" },
-        ],
-        9: [
-            { name: "", logo: "globoplay.png" },
-        ],
-        10: [
-            { name: "", logo: "hbo.png" },
-        ],
-        11: [
-            { name: "", logo: "prime.png" },
-            { name: "", logo: "apple.png" }
-        ],
-        12: [
-            { name: "", logo: "cinema.png" },
-        ],
 
+    const providerInfo = {
+        netflix:    { name: "Netflix",       logo: "netflix.png",    url: "https://www.netflix.com" },
+        prime:      { name: "Prime Video",   logo: "prime.png",      url: "https://www.primevideo.com" },
+        hbo:        { name: "HBO Max",       logo: "hbo.png",        url: "https://www.hbomax.com" },
+        apple:      { name: "Apple TV+",     logo: "apple.png",      url: "https://tv.apple.com" },
+        disney:     { name: "Disney+",       logo: "disney.png",     url: "https://www.disneyplus.com" },
+        paramount:  { name: "Paramount+",    logo: "paramount.png",  url: "https://www.paramountplus.com" },
+        globoplay:  { name: "Globoplay",     logo: "globoplay.png",  url: "https://globoplay.globo.com" },
+        cinema:     { name: "Nos Cinemas",   logo: "cinema.png",     url: "#" }
     };
-    
-    const providers = availabilityData[movie.id] || [
-        { name: "Netflix", logo: "netflix.png" },
-        { name: "Prime Video", logo: "amazon.png" },
-        { name: "HBO Max", logo: "hbo.png" }
-    ];
-    
+
+    const availabilityData = {
+        1: ["hbo", "prime", "apple"],
+        2: ["netflix", "paramount"],
+        3: ["disney"],
+        4: ["netflix", "prime"],
+        5: ["netflix", "hbo", "paramount"],
+        6: ["netflix", "prime", "globoplay"],
+        7: ["disney"],
+        8: ["disney"],
+        9: ["globoplay"],
+        10: ["hbo"],
+        11: ["prime", "apple"],
+        12: ["cinema"]
+    };
+
+    const providerIds = availabilityData[movie.id] || [];
+    const providers = providerIds.map(id => providerInfo[id]);
+
     movieDetailContent.innerHTML = `
         <div class="movie-detail">
             <div class="movie-poster-detail">
@@ -90,17 +62,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2 class="availability-title">Disponível em:</h2>
                     <div class="providers">
                         ${providers.map(provider => `
-                            <div class="provider">
+                            <a class="provider" href="${provider.url}" target="_blank" rel="noopener noreferrer">
                                 <img src="assets/${provider.logo}" alt="${provider.name}">
                                 <div>${provider.name}</div>
-                            </div>
+                            </a>
                         `).join('')}
                     </div>
                 </div>
             </div>
         </div>
     `;
-    
+
     backButton.addEventListener('click', () => {
         window.history.back();
     });
