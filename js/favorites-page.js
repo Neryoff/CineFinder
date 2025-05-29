@@ -58,4 +58,4 @@ function goToFavoriteMovieDetails(movieId) {
 }
 
 window.goToFavoriteMovieDetails = goToFavoriteMovieDetails;
-window.toggleFavorite = toggleFavorite; // Garantir que está disponível
+window.toggleFavorite = toggleFavorite;
